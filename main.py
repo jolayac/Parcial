@@ -2,7 +2,7 @@ import usuarios
 import libros
 
 usuarios_lista = []
-libros_lista = libros
+libros_lista = []
 
 
 def nuevo_usuario():
@@ -28,7 +28,7 @@ def mostrar_libros():
 def main():
     while True:
         seleccion = input(
-            "Seleccione lo que quiere hacer (escriba el número de la opción que quiere seleccionar):\n1. Registrar un nuevo usuario.\n2. Registrar un libro.\n3. Mostrar usuarios.\n4. Mostrar libros.\n>").strip()
+            "\nSeleccione lo que quiere hacer (escriba el número de la opción que quiere seleccionar):\n1. Registrar un nuevo usuario.\n2. Registrar un libro.\n3. Mostrar usuarios.\n4. Mostrar libros.\n>").strip()
         if seleccion == "1":    # Registrar un nuevo usuario.
             nuevo_usuario()
         elif seleccion == "2":  # Registrar un libro.

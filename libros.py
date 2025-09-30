@@ -23,7 +23,7 @@ def registrar_libro():
         elif categoria == "comedia" or categoria == "2":
             categoria_valida = "Comedia"
             break
-        elif categoria == "historia" or categoria == "2":
+        elif categoria == "historia" or categoria == "3":
             categoria_valida = "Historia"
             break
         else:
