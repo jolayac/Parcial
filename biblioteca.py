@@ -11,7 +11,7 @@ class Biblioteca:
     def registrar_usuario(self):
         nombre = input("\nNombre del usuario:\n> ").strip(
         ).title()   # Pide nombre
-        documento = input("\nIngrese su número de documento:\n> ").strip(
+        documento = input("\nNúmero de documento:\n> ").strip(
         ).title()   # Pide número de documento
         usuario = Usuario(nombre, documento)    # Crea el usuario
         self.lista_usuarios.append(usuario)
@@ -48,11 +48,12 @@ class Biblioteca:
 
     def mostrar_usuarios(self):
         for usu in self.lista_usuarios:
-            print(f"\n{usu.nombre}\n{usu.documento}\n")
+            print(f"\nNombre: {usu.nombre}\nDocumento: {usu.documento}\n")
 
     def mostrar_libros(self):
         for lib in self.lista_libros:
-            print(f"\n{lib.titulo}\n{lib.autor}\n{lib.categoria}\n")
+            print(
+                f"\nTítulo: {lib.titulo}\nAutor: {lib.autor}\nCategoría: {lib.categoria}\n")
 
     def mostrar_menu(self):
         while True:
