@@ -3,8 +3,7 @@ from libros import Libro
 
 
 class Biblioteca:
-    def __init__(self, nombre):
-        self.nombre_bibliotecario = nombre
+    def __init__(self):
         self.lista_usuarios = []
         self.lista_libros = []
 
@@ -72,15 +71,9 @@ class Biblioteca:
                     f"\n\"{seleccion}\" no está entre las opciones (1, 2, 3 y 4).\nIntente de nuevo.\n")
 
 
-def registrar_bibliotecario():
-    nombre = input("\nIngrese su nombre\n> ").strip().title()
-    bibliotecario = Biblioteca(nombre)
-    return bibliotecario
-
-
 def main():
-    bibliotecario = registrar_bibliotecario()
-    bibliotecario.mostrar_menu()
+    biblioteca = Biblioteca()
+    biblioteca.mostrar_menu()
 
 
 if __name__ == "__main__":
